@@ -1,8 +1,8 @@
 const express = require("express");
 
 const app = express();
-const PORT = 4000;
 const templatesPath = "/src/public/views/";
+const PORT = process.env.PORT || 3000;
 
 //routes
 app.use("/public", express.static(__dirname + "/src/public/"));
